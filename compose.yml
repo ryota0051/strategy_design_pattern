@@ -1,0 +1,13 @@
+services:
+  app:
+    build: ./strategy_demo_vite
+    volumes:
+      - app_modules:/app/node_modules
+      - ./strategy_demo_vite:/app
+    ports:
+      - 3000:3000
+    tty: true
+    command: npm run dev
+
+volumes:
+  app_modules:
