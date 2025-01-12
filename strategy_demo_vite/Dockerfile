@@ -19,4 +19,4 @@ RUN chown -R node:node ./
 
 USER node
 
-CMD ["npm", "dev"]
+CMD ["npm", "run", "dev"]
